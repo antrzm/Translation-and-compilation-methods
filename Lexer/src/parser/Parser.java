@@ -30,7 +30,7 @@ public class Parser {
                 currentLexeme = lexer.getLexeme();
                 tmp += parseTerm();
             }
-            if (currentLexeme.type == LexemeType.PLUS) {
+            if (currentLexeme.type == LexemeType.MINUS) {
                 currentLexeme = lexer.getLexeme();
                 tmp -= parseTerm();
             }

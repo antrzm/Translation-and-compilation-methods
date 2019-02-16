@@ -22,7 +22,6 @@ public class Lexer {
 
     public Lexeme getLexeme() throws IOException {
         Lexeme res;
-        current = reader.read();
         while (Character.isWhitespace(current)) {
             current = reader.read();
         }
